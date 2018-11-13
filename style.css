@@ -1,3 +1,14 @@
+/* html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+*,::after,::before {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+} */
 /* Navigation */
 
 /* Masthead */
@@ -5,6 +16,53 @@
 /* Icons Grid */
 
 /* Image Showcases */
+#imageShowcases_2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.imageShowcases-image_2 {
+  width: 100%;
+  min-height: 480px;
+  overflow: hidden;
+  position: relative;
+}
+.imageShowcases-image_2 > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imageShowcases-text_2 {
+  padding: 50px;
+  width: 100%;
+}
+.imageShowcases-horizontalSection_2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width:768px) {
+  .imageShowcases-text_2 {
+    padding: 100px;
+  }
+}
+@media screen and (min-width:992px) {
+  .imageShowcases-text_2 {
+    width: 50%;
+  }
+  .imageShowcases-image_2 {
+    width: 50%;
+    min-height: 200px;
+  }
+  
+  .imageShowcases-horizontalSection_2 {
+    flex-direction: row;
+  }
+  .imageShowcases-horizontalSection_2.imageShowcases-horizontalSection_2--largeReverse {
+    flex-direction: row-reverse;
+  }
+}
 
 /* Testimonials */
 
