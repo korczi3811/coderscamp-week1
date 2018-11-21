@@ -10,6 +10,49 @@
   position: relative;
 } */
 /* Navigation */
+body {
+    margin: 0;
+}
+
+.start-bootstrap {
+    font-family: Arial;
+    font-size: 1.25em;
+    font-weight: lighter;
+    padding-left: 20px;
+}
+
+#signin-button {
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-size: 1em;
+    padding: .5em 1.75em;
+    background-color: #007bff;
+    display: inline-box;
+    border-radius: 0.3em;
+}
+
+#signin-button:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#signin-button:focus {
+    box-shadow: 0 0 0 3px #86acdc;
+}
+
+.section-1-header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f8f9fa;
+    width: 100%;
+    padding: 1em 3em;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* Masthead */
 #section-2 {
@@ -210,5 +253,94 @@
 /* Call to Action */
 
 /* Footer */
+
+.footer {
+    background-color: #f8f9fa;
+    width: 100%;
+    padding: 64px 0;
+    margin: auto;
+    display:flex;
+}
+
+.footer-menu {
+    padding-left: 90px;
+    margin: auto;
+    font-size: 1em;
+    color: #007bff;
+    font-family: Helvetica;
+    width: 50%;
+    
+}
+
+.footer-last-sentence {
+    padding-left: 15px;
+    font-size: 0.75em;
+    color: #6c757d;
+    font-family: Helvetica;
+}
+
+#social-media {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    padding-right: 90px;
+   
+}
+
+#social-media a {
+    color: #007bff; 
+    padding: 0 15px;
+    transition: 0.3s ease filter;
+}
+#social-media a:hover {
+    color:#0069d9;
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.bullet-point {
+    color: #007bff;
+    padding: 0 15px;
+}
+.bullet-point:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color:#0069d9;
+}
+
+.footer-list {
+display: flex;
+list-style: none;
+padding:0;
+white-space: nowrap;
+}
+
+@media (max-width: 990px){
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #social-media {
+        justify-content:center;
+        padding: 0;
+    }
+    .footer-last-sentence {
+        padding: 0;
+        text-align: center;
+    }
+    .footer-menu {
+        padding: 0;
+        width: 100%;
+        
+    }
+    .footer-list{
+        white-space: nowrap;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+}
+
 
 /* Bootstrap core JavaScript */
